@@ -627,6 +627,34 @@ body {
     font-weight: 500;
 }
 
+/* Hero Badges */
+.hero-badges {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: flex-end;
+}
+
+.badge-link {
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.badge-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.hero-badge {
+    height: 70px;
+    width: auto;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    border-radius: 16px;
+    background-color: #000;
+    padding: 2px;
+}
+
 /* Buttons */
 .btn-primary,
 .btn-secondary {
@@ -848,6 +876,21 @@ body {
     margin-top: 0.5rem;
 }
 
+.email-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    word-break: break-word;
+    transition: color 0.2s;
+}
+
+.email-link:hover {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
 .contact-images {
     flex: 1;
     display: flex;
@@ -988,6 +1031,10 @@ body {
     .hero-text {
         max-width: 100%;
         text-align: center;
+    }
+
+    .hero-badges {
+        justify-content: center;
     }
 
     .hero-logo {
